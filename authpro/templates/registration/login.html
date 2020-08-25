@@ -1,0 +1,12 @@
+{%extends 'testapp/base.html'%}
+       {%block body%}
+       <div class="jumbotron" align='center'>
+         <h1>Weclcome to Write exams </h1>
+         <form   method="post">
+           {{form.as_p}}
+           {%csrf_token%}
+           <button type="submit">Login</button>
+        {%endblock%}
+         </form>
+
+       </div>

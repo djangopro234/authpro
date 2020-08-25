@@ -1,0 +1,12 @@
+{%extends 'testapp/base.html'%}
+       {%block body%}
+       <div class="container">
+         <h1>Weclcome to signup page</h1>
+         <form class="" method="post">
+           {{form.as_p}}
+           {%csrf_token%}
+           <button type="submit">Submit</button>
+         </form>
+
+       </div>
+      {%endblock%}
